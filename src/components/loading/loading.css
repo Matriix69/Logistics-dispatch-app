@@ -1,0 +1,14 @@
+.loadingg{
+    width: 100% !important;
+    height: calc(100vh - 180px);
+    display: flex !important;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    transform: translateY(-50px);
+}
+.loadingg svg{
+    margin: 0;
+}

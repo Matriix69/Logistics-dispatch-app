@@ -1,55 +1,24 @@
-import React, { Component } from 'react';
-import './App.css';
-import Navigation from './components/Navigation/Navigation';
-import  SimpleSlider from './components/Slide/Slide';
-import Comtact from './components/Contact/Contact'
-import Pricing from './components/Pricing/Pricing'
-import Deliveries from './components/Deliveries/Deliveries'
-class App extends Component {
-  constructor(){
-    super();
-    this.state ={
-      route: 'home'
-    }
-  }
+import { Switch, Route } from "react-router-dom";
+import "./App.css";
+import Navbar from "./components/Dashboard/Navbar";
+import { AuthProvider } from "./context/AuthContext";
+import Home from "./components/Home/Home";
 
-  onRouteChange = (route) => {
-    this.setState({route: route})
-  }
+// const Home = lazy(() => import("./components/Home/Home"));
+// const Navbar = lazy(() => import("./components/Dashboard/Navbar"));
+// const {AuthProvider} = lazy(() => import("./context/AuthContext"));
 
-  render(){
-    const {route} = this.state;
-    return (
-      <div className="wrapper">
-        <Navigation onRouteChange={this.onRouteChange} />
-        { route === 'home' ?
-          <div>
-            <SimpleSlider onRouteChange={this.onRouteChange}/>
-          </div>
-         
-          : (
-              route === 'contact' ?
-            <div className="nomargin">
-              <Comtact />
-            </div> 
-            : (
-              route === 'pricing' ? 
-              <div>
-                <Pricing />
-              </div>
-              :
-              <div>              
-                <Deliveries />
-              </div>
-            )
-            
-          )          
-        }
-      </div>
-    );
-  }
+function App() {
+	return (
+		//  <Suspense fallback={<h1>Loading profile...</h1>}>
+		<AuthProvider>
+			<Switch>
+				<Route path="/dashboard" component={Navbar} />
+				<Route path="/" component={Home} />
+			</Switch>
+		</AuthProvider>
+		// </Suspense>
+	);
 }
-  
-  
 
 export default App;

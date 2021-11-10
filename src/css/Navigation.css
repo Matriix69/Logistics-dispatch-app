@@ -1,0 +1,116 @@
+.nav {
+	padding: 5px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: all 0.3s ease;
+	z-index: 100000000000000 !important;
+	background-color: #fff;
+}
+.logo h1 {
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+	font-family: "Paytone One", sans-serif;
+	font-weight: normal;
+	letter-spacing: -0.5px;
+	transition: all 0.5s ease;
+}
+.logo {
+	border-radius: 10px;
+	padding: 5px;
+	transition: all 0.5s ease;
+	-webkit-tap-highlight-color: transparent;
+	line-height: 0;
+}
+.logo:hover {
+	/* box-shadow: 0 0 30px 0 rgb(102 204 102 / 88%); */
+	transform: translateY(-3px);
+}
+.logo h1 {
+	line-height: 0.8;
+	font-size: 1.7rem;
+}
+.logo a {
+	cursor: pointer;
+	transition: all 0.2s ease;
+	text-decoration: none;
+	color: #000;
+}
+.logo a h1 span {
+	color: #66cc66;
+}
+/* .logo a h1 span:first-child {
+  color: #212121;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+} */
+/* .logo:hover{
+    box-shadow: 0px 0px 34px 0px rgba(102,204,102,1);
+} */
+.logo p {
+	font-weight: 500;
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+	line-height: normal;
+	letter-spacing: 4px;
+	text-align: right;
+	color: rgba(0, 0, 0, 0.54);
+}
+.nav-links {
+	position: relative;
+}
+
+.nav-links {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	list-style: none;
+	/* line-height: 1; */
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: #66cc66;
+	text-transform: capitalize;
+	font-size: 15px;
+	font-weight: 500;
+	transition: opacity 0.3s ease, border-bottom 0.3s ease;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+}
+.nav-links div {
+	margin: 0 10px;
+	pointer-events: none;
+	cursor: default;
+	border-radius: 100%;
+	width: 4.85px;
+	height: 4.85px;
+	background: #66cc66;
+	justify-content: center;
+}
+.nav-links a:hover {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 990px) {
+	.nav {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	}
+	.nav-links a {
+		margin: 0;
+		font-size: 10px;
+		color: #76b676;
+		font-weight: 500;
+	}
+	.nav-links a:hover {
+		border-bottom: none;
+	}
+}

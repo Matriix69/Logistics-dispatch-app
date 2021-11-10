@@ -1,0 +1,181 @@
+.shift {
+  margin-bottom: 20px;
+}
+
+.contact-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  max-width: 700px;
+  margin: 4rem auto 0;
+  position: relative;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.show-page {
+  transform: translateX(0);
+  opacity: 1;
+}
+.contact-wrapper-dashboard {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+.contact-wrapper-child:nth-child(1) {
+  /* max-width: 350px;
+  padding-right: 20px; */
+  transition: all 0.2s ease;
+  margin: 0 auto;
+}
+.contact-wrapper-child:nth-child(2) {
+  width: 350px;
+  padding-left: 20px;
+  transition: all 0.2s ease;
+}
+.input-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 23px;
+  position: relative;
+}
+.input-section input {
+  border: 1px solid #dfe0eb;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 8px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.input-section input:focus {
+  border-color: #80bdff !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+.input-section textarea {
+  border: 1px solid #dfe0eb;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+.input-section textarea:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+}
+.contact-details a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-details a > p {
+  color: #66cc66;
+  margin-left: 10px;
+}
+
+.btn-primary-contact {
+  padding: 14px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn-primary-contact {
+  border: none;
+  background: #66cc66;
+  color: white;
+}
+.btn-primary-contact:disabled,
+.btn-primary-contact[disabled] {
+  /* background: rgba(102, 204, 102, 0.7) */
+  opacity: 0.6;
+}
+.errmsg {
+  color: red !important;
+}
+.errorMessage {
+  font-family: "Poppins", sans-serif;
+  color: red;
+  height: 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+.success-message {
+  color: #66cc66;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.errordashboard {
+  color: red;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.error {
+  border: 1px solid rgba(255, 0, 0, 0.199) !important;
+}
+.back-drop {
+  background: rgb(51, 51, 51, 0.6292);
+  height: 100%;
+  position: fixed;
+  transition: all 1.3s;
+  width: 100%;
+}
+.sending-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sending-message p {
+  padding: 0;
+  margin: 0;
+  margin-left: 8px;
+}
+@media screen and (max-width: 990px) {
+  .contact-wrapper {
+    flex-direction: column;
+    margin: 1rem auto 0;
+  }
+  .contact-wrapper-dashboard {
+    flex-direction: column;
+    padding: 0;
+  }
+  .contact-wrapper-child:nth-child(1) {
+    width: 100%;
+    padding: 0;
+  }
+  .contact-wrapper-child:nth-child(2) {
+    width: 100%;
+    padding: 0;
+    margin-top: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .input-section label,
+  .input-section .errorMessage {
+    font-size: 0.8em;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .btn-primary-contact:hover {
+    background: none;
+    color: black;
+    border: 1px solid #363740;
+    transition: all 0.3s ease;
+  }
+}

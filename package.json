@@ -1,43 +1,46 @@
 {
-  "name": "glogistic",
-  "homepage": "https://Matriix69.github.io/Glogistics",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.8",
-    "@testing-library/react": "^11.2.3",
-    "@testing-library/user-event": "^12.6.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
-    "react-slick": "^0.28.0",
-    "slick-carousel": "^1.8.1",
-    "web-vitals": "^0.2.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "glogistic",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@testing-library/jest-dom": "^5.11.8",
+		"@testing-library/react": "^11.2.3",
+		"@testing-library/user-event": "^12.6.0",
+		"classnames": "^2.3.1",
+		"date-fns": "^2.20.0",
+		"emailjs-com": "^2.6.4",
+		"firebase": "^9.2.0",
+		"formik": "^2.2.6",
+		"gh-pages": "^3.2.3",
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1",
+		"react-icons": "^4.2.0",
+		"react-paystack": "^3.0.3",
+		"react-places-autocomplete": "^7.3.0",
+		"react-router-dom": "^5.2.0",
+		"react-scripts": "4.0.3",
+		"react-swipeable": "^6.1.0",
+		"react-table": "^7.7.0",
+		"styled-components": "^5.3.0",
+		"web-vitals": "^0.2.4",
+		"yup": "^0.32.8"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": [
+		">0.3%",
+		"not ie 11",
+		"not dead",
+		"not op_mini all"
+	]
 }

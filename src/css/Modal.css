@@ -1,0 +1,128 @@
+.modal-background {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(25, 33, 43, 0.4);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.modal-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 30rem;
+  margin: 4rem auto;
+  transition: all 0.2s ease 0s;
+
+  -webkit-box-shadow: 0 2px 3px 0 rgba(60, 64, 67, 0.3),
+    0 6px 10px 4px rgba(60, 64, 67, 0.15) !important;
+  background-color: #fafafa !important;
+  -webkit-border-radius: 16px !important;
+  overflow: hidden;
+}
+
+.modal-header {
+  color: #c62828;
+  padding: 0.2em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(198, 40, 40, 0.15);
+  /* border-radius: 16px; */
+}
+.modal-header p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 36px;
+}
+
+.modal-content {
+  padding: 1rem 0.5rem;
+  text-align: center;
+}
+.modal-body {
+  margin-bottom: 0.4rem;
+}
+.modal-body img {
+  height: 30px;
+  width: 30px;
+}
+.modal-body p {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.54);
+  font-weight: 500;
+}
+.modal-footer {
+  display: flex;
+  justify-content: flex-end !important;
+}
+.modal-footer button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background: rgba(0, 0, 0, 0.06);
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: flex-end !important;
+}
+.close-modal-btn {
+  cursor: pointer;
+}
+
+/* succss modal */
+.modal-success-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 30rem;
+  margin: 4rem auto;
+  transition: all 0.2s ease 0s;
+
+  -webkit-box-shadow: 0 2px 3px 0 rgba(60, 64, 67, 0.3),
+    0 6px 10px 4px rgba(60, 64, 67, 0.15) !important;
+  background-color: #fafafa !important;
+  -webkit-border-radius: 16px !important;
+  overflow: hidden;
+}
+.modal-success-wrapper .modal-header {
+  background-color: rgba(102, 204, 102, 0.12);
+  color: #66cc66;
+}
+
+.modal-success-content {
+  padding: 1rem 0.5rem;
+  background: #fafafa;
+  text-align: center;
+}
+.modal-success-body {
+  margin-bottom: 0.4rem;
+}
+.modal-success-body p {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.54);
+  font-weight: 500;
+}
+.modal-success-body img {
+  height: 30px;
+  width: 30px;
+}
+@media only screen and (max-width: 550px) {
+  .modal-wrapper {
+    max-width: 100%;
+  }
+  .modal-success-wrapper {
+    max-width: 100%;
+  }
+}

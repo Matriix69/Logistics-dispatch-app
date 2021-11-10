@@ -1,0 +1,62 @@
+.pending-order-page .logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.redcoloer {
+  background-color: #ff6961;
+}
+
+.pending-order-page .btn-primary {
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order-list-bottom {
+  display: flex;
+  flex-direction: row;
+}
+.margin-right {
+  margin-right: 5px !important;
+}
+.margin-top {
+  margin-top: 2rem;
+}
+.confirm-dispatch {
+  background: #29cc97 !important;
+  border: none !important;
+}
+.rider-assigned {
+  background-color: #f8b564 !important;
+  border: none !important;
+}
+
+.select {
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 5px;
+  width: 80px;
+  background-color: #F3F6F9;
+  font-size: 11px;
+  line-height: 1.35;
+  border-radius: 0.28rem;
+  border:none;
+  font-family: Poppins, sans-serif;
+}
+.select:focus {
+  outline: none;
+}
+.star {
+  position: absolute;
+  top: 1rem;
+  right: 3.2rem;
+  font-size: 10px;
+  color: red;
+}
+
+@media only screen and (min-width: 400px) {
+  .order-list-bottom {
+    flex-direction: row;
+  }
+}

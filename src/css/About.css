@@ -1,0 +1,41 @@
+.aboutus-page {
+    padding: 0 3rem 0 2rem;
+    transition: all .2s ease;
+}
+.aboutus-page section {
+    margin-bottom: 3rem;
+    display: block;
+}
+.aboutus-page section p.text-medium:first-child {
+    font-weight: 500;
+    font-size: 17px;
+}
+.aboutus-page section p.text {
+    margin-bottom: 2rem;
+    line-height: 1.7rem;
+    text-align: justify;
+    font-weight: 300;
+    font-size: 14px;
+
+}
+.value-title {
+    display: inline;
+    font-weight: 500 !important;
+    
+}
+.aboutus-page section ul{
+    padding-left: 50px !important;
+    
+}
+.aboutus-page section ul li{
+    margin-bottom: 1rem!important;
+}
+@media screen and (max-width: 990px) {
+    .aboutus-page {
+        padding: 0;
+    }
+    .aboutus-page section p.text{
+        margin-top: 1rem;
+        line-height: 1.5rem;
+    }
+}
