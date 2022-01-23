@@ -1,255 +1,255 @@
 .bussiness-wrapper {
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 2rem;
-  min-height: 850px;
-  overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+    min-height: 850px;
+    overflow-x: hidden;
 
-  position: relative;
-  transform: translateX(100%);
-  opacity: 0;
-  transition: all 0.2s ease-in-out;
+    position: relative;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
 }
 .register-section {
-  width: 40%;
-  margin-bottom: 3rem;
-  /* transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); */
-  position: relative;
-  box-sizing: border-box;
+    width: 40%;
+    margin-bottom: 3rem;
+    /* transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); */
+    position: relative;
+    box-sizing: border-box;
 }
 .register-section > div {
-  position: absolute;
-  left: 0;
-  top: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .login-content {
-  position: relative;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
 }
 .signup {
-  opacity: 1;
-  transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
 }
 .-hide {
-  opacity: 0;
-  transform: translateX(-100%);
+    opacity: 0;
+    transform: translateX(-100%);
 }
 .login {
-  opacity: 0;
-  transform: translateX(-200%);
+    opacity: 0;
+    transform: translateX(-200%);
 }
 .-show {
-  opacity: 1;
-  transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
 }
 .input-business:first-of-type {
-  margin-top: 0;
+    margin-top: 0;
 }
 .section2 > div {
-  position: absolute;
-  left: 0;
-  top: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .input-business {
-  background: #fff;
-  position: relative;
-  border: 1px solid #363740;
-  border-radius: 6px;
-  display: flex;
-  padding: 0.65rem;
-  transition: all 0.3s ease;
-  margin-top: 35px;
-  box-sizing: border-box;
+    background: #fff;
+    position: relative;
+    border: 1px solid #363740;
+    border-radius: 6px;
+    display: flex;
+    padding: 0.65rem;
+    transition: all 0.3s ease;
+    margin-top: 35px;
+    box-sizing: border-box;
 }
-.input-business-highlight {
-  border: 1px solid #66cc66 !important ;
-  color: #66cc66;
-  transition: all 0.3s ease;
+.input-business:focus-within {
+    border: 1px solid #66cc66 !important ;
+    color: #66cc66;
+    transition: all 0.3s ease;
 }
 .input-label {
-  position: absolute;
-  top: -0.7rem;
-  left: 1rem;
-  background-color: #fff;
-  display: inline-block;
-  padding: 0 4px;
+    position: absolute;
+    top: -0.7rem;
+    left: 1rem;
+    background-color: #fff;
+    display: inline-block;
+    padding: 0 4px;
 }
 .input-field {
-  display: flex;
-  align-items: center;
-  width: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 .input-business input {
-  font-family: "Poppins", sans-serif;
-  font-size: 10px;
-  width: 100%;
-  border: none;
-  outline: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
 }
 .prepend {
-  color: #c5c7cd;
-  margin: 0;
-  margin-right: 0.4rem;
-  font-size: 1rem;
+    color: #c5c7cd;
+    margin: 0;
+    margin-right: 0.4rem;
+    font-size: 1rem;
 }
 /*  */
 .text-title-register {
-  font-size: 1.5rem;
-  line-height: 3.6rem;
-  letter-spacing: 0.03rem;
-  text-align: center;
-  margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.03rem;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 .text.text-large {
-  font-size: 28px;
+    font-size: 28px;
 }
 .corporate-incentives {
-  text-align: left;
-  box-sizing: border-box;
+    text-align: left;
+    box-sizing: border-box;
 
-  width: 40%;
-  text-align: left;
-  margin-right: 1rem;
-  display: block;
+    width: 40%;
+    text-align: left;
+    margin-right: 1rem;
+    display: block;
 }
 .incentive-title {
-  line-height: 35px;
-  margin-bottom: 1.5rem;
-  margin-top: 3rem;
+    line-height: 35px;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
 }
 .sub-incentive {
-  color: #666;
-  line-height: normal;
+    color: #666;
+    line-height: normal;
 }
 .sub-incentive p {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 .tandc-checkbox {
-  text-align: left;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 1.5rem;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1.5rem;
 }
 .tandc-checkbox p {
-  display: inline-block;
-  margin-left: 2px;
+    display: inline-block;
+    margin-left: 2px;
 }
 .tandc-checkbox p:hover {
-  text-decoration: underline;
-  color: #4ba54b;
+    text-decoration: underline;
+    color: #4ba54b;
 }
 .tandc-label {
-  cursor: pointer;
+    cursor: pointer;
 }
 .signup-link {
-  color: #f12b2c;
-  cursor: pointer;
+    color: #f12b2c;
+    cursor: pointer;
 }
 .signin-request {
-  text-align: center;
-  margin: 0;
+    text-align: center;
+    margin: 0;
 }
 .text-right {
-  margin-top: 1rem;
-  text-align: right;
-  color: #76b676;
-  cursor: pointer;
-  text-decoration: underline;
+    margin-top: 1rem;
+    text-align: right;
+    color: #76b676;
+    cursor: pointer;
+    text-decoration: underline;
 }
 .password-reset-wrapper {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
 }
 .password-reset {
-  max-width: 500px;
-  padding: 30px;
-  box-sizing: border-box;
-  width: 100%;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    max-width: 500px;
+    padding: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .input-reset {
-  background: #fff;
-  position: relative;
-  border: 1px solid #363740;
-  border-radius: 0.6rem;
-  display: flex;
-  padding: 0.8rem;
-  transition: all 0.3s ease;
-  margin-bottom: 0.2rem;
-  box-sizing: border-box;
+    background: #fff;
+    position: relative;
+    border: 1px solid #363740;
+    border-radius: 0.6rem;
+    display: flex;
+    padding: 0.8rem;
+    transition: all 0.3s ease;
+    margin-bottom: 0.2rem;
+    box-sizing: border-box;
 }
 .input-reset input {
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  width: 100%;
-  border: none;
-  outline: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    border: none;
+    outline: none;
 }
 .btn-access {
-  margin: 50px 0 20px 0;
+    margin: 50px 0 20px 0;
 }
 
 .btn-forgot-pass {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .confirm-email {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  margin-top: 0.5rem;
-  max-width: 46.7rem;
-  text-align: center;
-  height: 36rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    max-width: 46.7rem;
+    text-align: center;
+    height: 36rem;
 }
 .confirm-email img {
-  width: 260px;
-  max-width: 25rem;
-  margin: 0 auto;
+    width: 260px;
+    max-width: 25rem;
+    margin: 0 auto;
 }
 .noline-height {
-  line-height: normal !important;
-  font-weight: 400;
+    line-height: normal !important;
+    font-weight: 400;
 }
 .confirm-email p {
-  margin: 1rem 0;
+    margin: 1rem 0;
 }
 @media screen and (max-width: 990px) {
-  .corporate-incentives {
-    display: none;
-  }
-  .bussiness-wrapper {
-    margin-top: 0.5rem;
-  }
-  .register-section {
-    width: 100%;
-    margin-bottom: 3rem;
-  }
-  .confirm-email {
-    margin: 0;
-    margin-top: 2rem;
-    width: 100%;
-  }
+    .corporate-incentives {
+        display: none;
+    }
+    .bussiness-wrapper {
+        margin-top: 0.5rem;
+    }
+    .register-section {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .confirm-email {
+        margin: 0;
+        margin-top: 2rem;
+        width: 100%;
+    }
 }
 @media screen and (max-width: 600px) {
-  .input-business {
-    padding: 0.7rem;
-  }
+    .input-business {
+        padding: 0.7rem;
+    }
 }
 @media screen and (max-width: 400px) {
-  .input-business {
-    padding: 0.6rem;
-  }
+    .input-business {
+        padding: 0.6rem;
+    }
 }
